@@ -1,0 +1,295 @@
+<!-- 
+    Projeto: Portfólio Pessoal
+    Aluno: Gabriel Peres Leal
+
+    Estrutura Single Page Website
+    Navegação por âncoras
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título do site -->
+    <title>Gabriel Peres Leal | Portfólio</title>
+
+    <!-- Ligação com o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- CABEÇALHO / MENU -->
+    <!-- ========================= -->
+
+    <header>
+
+        <!-- Logo/Nome -->
+        <div class="logo">
+            <h2>Gabriel Peres Leal</h2>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
+
+            <ul>
+
+                <!-- Links com âncoras -->
+                <li><a href="#sobre">Sobre Mim</a></li>
+
+                <li><a href="#formacao">Formação</a></li>
+
+                <li><a href="#portfolio">Portfólio</a></li>
+
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Área da direita do menu -->
+        <div class="menu-direita">
+
+            <!-- Campo de pesquisa -->
+            <input 
+                type="text" 
+                placeholder="Pesquisar..."
+                class="barra-pesquisa"
+            >
+
+            <!-- Botão alterar tema -->
+            <button id="botao-tema">
+
+                🌙
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- ========================= -->
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- SOBRE MIM -->
+        <!-- ========================= -->
+
+        <section id="sobre" class="secao">
+
+            <h1>Sobre Mim</h1>
+
+            <p>
+                Me chamo Gabriel Peres Leal, tenho 22 anos e atualmente 
+                trabalho como operador de monitoramento.
+            </p>
+
+            <p>
+                Também estou cursando Bacharelado em Ciência da Computação 
+                na UNINTER.
+            </p>
+
+            <p>
+                Sou cristão, gosto de frequentar a igreja e participar de 
+                estudos bíblicos.
+            </p>
+
+            <p>
+                No meu tempo livre gosto de jogar jogos online, treinar 
+                na academia e estudar tecnologia.
+            </p>
+
+            <p>
+                Foi através de um curso de hardware que descobri minha paixão 
+                pela área da tecnologia.
+            </p>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- FORMAÇÃO -->
+        <!-- ========================= -->
+
+        <section id="formacao" class="secao">
+
+            <h1>Formação</h1>
+
+            <h2>Formação Acadêmica</h2>
+
+            <ul>
+
+                <li>
+                    Bacharelado em Ciência da Computação - UNINTER
+                    (02/2025 - Em andamento)
+                </li>
+
+                <li>
+                    Ensino Médio Completo - Acesso
+                    (02/2018 - 11/2020)
+                </li>
+
+            </ul>
+
+            <h2>Cursos</h2>
+
+            <ul>
+
+                <li>
+                    Técnico em Hardware - Microcamp
+                    (06/2023 - 05/2025)
+                </li>
+
+                <li>
+                    Curso de Inglês - Influx
+                    (02/2012 - 11/2014)
+                </li>
+
+                <li>
+                    Curso de Modelagem 3D - SESC
+                    (05/2022 - 06/2022)
+                </li>
+
+                <li>
+                    Curso de Criação de Jogos 2D - SESC
+                    (05/2022 - 06/2022)
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- PORTFÓLIO -->
+        <!-- ========================= -->
+
+        <section id="portfolio" class="secao">
+
+            <h1>Portfólio</h1>
+
+            <!-- Projeto 1 -->
+            <div class="card-projeto">
+
+                <h2>Braço Robótico</h2>
+
+                <p>
+                    Projeto em grupo utilizando Arduino e joystick para 
+                    controlar um braço robótico.
+                </p>
+
+                <p>
+                    Também utilizamos linguagem C# para desenvolver a 
+                    movimentação do sistema.
+                </p>
+
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="card-projeto">
+
+                <h2>Cofrinho Digital</h2>
+
+                <p>
+                    Sistema desenvolvido em Java capaz de armazenar valores 
+                    em Real, Dólar e Euro.
+                </p>
+
+                <p>
+                    O sistema realiza conversões automáticas para Real.
+                </p>
+
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="card-projeto">
+
+                <h2>Açaiteria Digital</h2>
+
+                <p>
+                    Projeto desenvolvido em Python simulando o sistema 
+                    de pedidos de uma açaiteria.
+                </p>
+
+                <p>
+                    O usuário escolhe o tamanho do produto e o sistema 
+                    calcula automaticamente o valor total.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- CONTATO -->
+        <!-- ========================= -->
+
+        <section id="contato" class="secao">
+
+            <h1>Contato</h1>
+
+            <!-- Formulário -->
+            <form id="form-contato">
+
+                <label for="nome">Nome:</label>
+
+                <input 
+                    type="text" 
+                    id="nome"
+                    placeholder="Digite seu nome"
+                >
+
+                <label for="email">E-mail:</label>
+
+                <input 
+                    type="email" 
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                >
+
+                <label for="mensagem">Mensagem:</label>
+
+                <textarea 
+                    id="mensagem"
+                    placeholder="Digite sua mensagem"
+                ></textarea>
+
+                <button type="submit">
+
+                    Enviar
+
+                </button>
+
+            </form>
+
+            <!-- Informações -->
+            <div class="info-contato">
+
+                <p><strong>Telefone:</strong> 41 98727-6805</p>
+
+                <p><strong>Email:</strong> gabripleal@gmail.com</p>
+
+                <p><strong>Instagram:</strong> @gabripleal</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Ligação com JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

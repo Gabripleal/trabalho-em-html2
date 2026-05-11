@@ -1,0 +1,340 @@
+/* ========================= */
+/* CONFIGURAÇÕES GERAIS */
+/* ========================= */
+
+/* Remove margens padrão */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rolagem suave ao clicar nas âncoras */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Corpo do site */
+body{
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #222;
+
+    transition: 0.3s;
+}
+
+/* ========================= */
+/* CABEÇALHO */
+/* ========================= */
+
+header{
+
+    width: 100%;
+
+    background-color: #111827;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 40px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+/* Logo */
+.logo h2{
+
+    font-size: 22px;
+}
+
+/* Menu */
+nav ul{
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 25px;
+}
+
+/* Links */
+nav a{
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* Hover */
+nav a:hover{
+
+    color: #3b82f6;
+}
+
+/* Área da direita */
+.menu-direita{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+/* Barra de pesquisa */
+.barra-pesquisa{
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    outline: none;
+}
+
+/* Botão tema */
+#botao-tema{
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Hover botão */
+#botao-tema:hover{
+
+    background-color: #1d4ed8;
+}
+
+/* ========================= */
+/* CONTEÚDO */
+/* ========================= */
+
+main{
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+/* Seções */
+.secao{
+
+    min-height: 100vh;
+
+    padding: 80px 0;
+
+    border-bottom: 1px solid #ccc;
+}
+
+/* Títulos */
+h1{
+
+    margin-bottom: 25px;
+
+    font-size: 36px;
+
+    color: #2563eb;
+}
+
+/* Subtítulos */
+h2{
+
+    margin-top: 20px;
+
+    margin-bottom: 15px;
+}
+
+/* Parágrafos */
+p{
+
+    margin-bottom: 15px;
+
+    line-height: 1.7;
+}
+
+/* Listas */
+ul{
+
+    margin-left: 20px;
+}
+
+/* ========================= */
+/* CARDS DOS PROJETOS */
+/* ========================= */
+
+.card-projeto{
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+/* Efeito hover */
+.card-projeto:hover{
+
+    transform: translateY(-5px);
+}
+
+/* ========================= */
+/* FORMULÁRIO */
+/* ========================= */
+
+form{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+/* Campos */
+input,
+textarea{
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    font-size: 16px;
+}
+
+/* Área mensagem */
+textarea{
+
+    height: 150px;
+
+    resize: none;
+}
+
+/* Botão enviar */
+form button{
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+/* Hover botão */
+form button:hover{
+
+    background-color: #1d4ed8;
+}
+
+/* ========================= */
+/* TEMA ESCURO */
+/* ========================= */
+
+body.dark{
+
+    background-color: #0f172a;
+
+    color: #f1f5f9;
+}
+
+/* Cards no modo escuro */
+body.dark .card-projeto{
+
+    background-color: #1e293b;
+}
+
+/* Inputs modo escuro */
+body.dark input,
+body.dark textarea{
+
+    background-color: #1e293b;
+
+    color: white;
+
+    border: 1px solid #475569;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+@media(max-width: 900px){
+
+    header{
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav ul{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .menu-direita{
+
+        flex-direction: column;
+    }
+
+    h1{
+
+        font-size: 28px;
+    }
+
+}
